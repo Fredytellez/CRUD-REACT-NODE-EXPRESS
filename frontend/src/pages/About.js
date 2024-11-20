@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div style={{marginTop:"150px"}}>
       <h2>{""}
-      This is React User Contact management System Application using Node And Express JS along with Routing
+      Este Proyecto se trata de un modulo de administracion de usuarios utilizando React, node y express junto con enrutamiento.
       </h2>
     </div>
   );

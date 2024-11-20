@@ -9,7 +9,7 @@ export const createUser = (req, res) => {
   const user = req.body;
 
   users.push({ ...user, id: uuid() });
-  res.send("user Added successfully");
+  res.send("Usuario agregado correctamente");
 };
 
 export const getUser = (req, res) => {
@@ -19,7 +19,7 @@ export const getUser = (req, res) => {
 
 export const deleteUser = (req, res) => {
     users = users.filter((user) => user.id !== req.params.id);
-    res.send("User deleted Successfully")
+    res.send("Usuario eliminado correctamente")
 }
 
 export const updateUser = (req, res) => {
@@ -29,5 +29,5 @@ export const updateUser = (req, res) => {
     user.email = req.body.email;
     user.contact = req.body.contact;
 
-    res.send("User updated successfully")
+    res.send("Usuario actualizado correctamente")
 }

@@ -49,7 +49,7 @@ const AddEdit = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!name || !email || !contact) {
-      toast.error("Please provide value into each input field");
+      toast.error("Por favor, introduzca el valor en cada campo");
     } else {
       if (!id) {
         addUser(state);
@@ -76,34 +76,34 @@ const AddEdit = () => {
         }}
         onSubmit={handleSubmit}
       >
-        <label htmlFor="name">Name</label>
+        <label htmlFor="name">Nombre</label>
         <input
           type="text"
           id="name"
           name="name"
-          placeholder="Enter Name..."
+          placeholder="Ingresar nombre"
           onChange={handleInputChange}
           value={name}
         />
-        <label htmlFor="email">Email</label>
+        <label htmlFor="email">Correo</label>
         <input
           type="text"
           id="email"
           name="email"
-          placeholder="Enter Email..."
+          placeholder="Ingresar correo"
           onChange={handleInputChange}
           value={email}
         />
-        <label htmlFor="contact">Contact</label>
+        <label htmlFor="contact">Numero de Contacto</label>
         <input
           type="number"
           id="contact"
           name="contact"
-          placeholder="Enter Contact No..."
+          placeholder="Ingresar numero de contacto"
           onChange={handleInputChange}
           value={contact}
         />
-        <input type="submit" value={id ? "Update" : "Add"} />
+        <input type="submit" value={id ? "Actalizar" : "Agregar"} />
       </form>
     </div>
   );

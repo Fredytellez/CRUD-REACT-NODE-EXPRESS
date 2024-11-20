@@ -25,27 +25,27 @@ const View = () => {
     <div style={{marginTop: "150px"}}>
       <div className="card">
         <div className="card-header">
-            <p>User Contact Detail</p>
+            <p>Detalles de usuario</p>
         </div>
         <div className="container">
             <strong>ID: </strong>
             <strong>{user && user.id}</strong>
             <br />
             <br />
-            <strong>Name: </strong>
+            <strong>Nombre: </strong>
             <strong>{user && user.name}</strong>
             <br />
             <br />
-            <strong>Email: </strong>
+            <strong>Correo: </strong>
             <strong>{user && user.email}</strong>
             <br />
             <br />
-            <strong>Contact: </strong>
+            <strong>Numero de contacto: </strong>
             <strong>{user && user.contact}</strong>
             <br />
             <br />
             <Link to={"/"}>
-            <button className="btn btn-edit">Go Back</button>
+            <button className="btn btn-edit">Regresar</button>
             </Link>
         </div>
       </div>

@@ -18,14 +18,14 @@ const Header = () => {
 
   return (
     <div className="header">
-      <p className="logo">User Management System</p>
+      <p className="logo">Sistema de administracion de usuarios</p>
       <div className="header-right">
         <Link to="/">
           <p
             className={`${activeTab === "Home" ? "active" : ""}`}
             onClick={() => setActiveTab("Home")}
           >
-            Home
+            Inicio
           </p>
         </Link>
         <Link to="/add">
@@ -33,7 +33,7 @@ const Header = () => {
             className={`${activeTab === "AddUser" ? "active" : ""}`}
             onClick={() => setActiveTab("AddUser")}
           >
-            Add User
+            Agregar usuario
           </p>
         </Link>
         <Link to="/about">
@@ -41,7 +41,7 @@ const Header = () => {
             className={`${activeTab === "About" ? "active" : ""}`}
             onClick={() => setActiveTab("About")}
           >
-            About
+            Acerca de
           </p>
         </Link>
       </div>

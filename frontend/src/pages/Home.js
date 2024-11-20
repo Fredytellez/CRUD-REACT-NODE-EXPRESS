@@ -20,7 +20,7 @@ const Home = () => {
 
   const onDeleteUser = async (id) => {
     if (
-      window.confirm("Are you sure that you wanted to delete that user record")
+      window.confirm("¿Está seguro de que desea eliminar ese registro de usuario?")
     ) {
       const response = await axios.delete(`http://localhost:5000/user/${id}`);
       if(response.status === 200){
@@ -37,10 +37,10 @@ const Home = () => {
         <thead>
           <tr>
             <th style={{ textAlign: "center" }}>No.</th>
-            <th style={{ textAlign: "center" }}>Name</th>
-            <th style={{ textAlign: "center" }}>Email</th>
-            <th style={{ textAlign: "center" }}>Contact</th>
-            <th style={{ textAlign: "center" }}>Action</th>
+            <th style={{ textAlign: "center" }}>Nombre</th>
+            <th style={{ textAlign: "center" }}>Correo</th>
+            <th style={{ textAlign: "center" }}>Contacto</th>
+            <th style={{ textAlign: "center" }}>Opciones</th>
           </tr>
         </thead>
         <tbody>
@@ -54,16 +54,16 @@ const Home = () => {
                   <td>{item.contact}</td>
                   <td>
                     <Link to={`/update/${item.id}`}>
-                      <button className="btn btn-edit">Edit</button>
+                      <button className="btn btn-edit">Editar</button>
                     </Link>
                     <button
                       className="btn btn-delete"
                       onClick={() => onDeleteUser(item.id)}
                     >
-                      Delete
+                      Eliminar
                     </button>
                     <Link to={`/view/${item.id}`}>
-                      <button className="btn btn-view">View</button>
+                      <button className="btn btn-view">Ver</button>
                     </Link>
                   </td>
                 </tr>
